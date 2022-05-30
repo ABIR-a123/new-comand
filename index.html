@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inspiration&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <title>Document</title>
+</head>
+
+<body class="">
+  <nav class="p-5 bg-[#2f7e94] shadow md:flex md:items-center md:justify-between">
+    <div class="flex justify-between">
+      <span class="text-2xl font-[popins] items-center">
+        <img class="lg:h-16 md:h-16 sm:h-2 lg:ml-20  inline" src="images/logo.png" alt="" />
+      </span>
+      <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+        <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+      </span>
+    </div>
+    </div>
+    <ul
+      class="md:flex md:items-center z-[-1] mr-10 md:z-auto md:static absolute bg-[#2f7e94] w-full left-0 md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+      <li class="mx-4 md:my-0 my-6">
+        <a href="" class="lg:text-2xl font-bold text-white hover:text-cyan-500 duration-500 ">Home</a>
+      </li>
+
+      <li class="mx-4 md:my-0 my-4">
+        <a href="" class="lg:text-2xl font-bold text-white hover:text-cyan-500 duration-500">About</a>
+      </li>
+
+      <li class="mx-4 md:my-0 my-4">
+        <a href="" class="lg:text-2xl font-bold text-white hover:text-cyan-500 duration-500">Skill</a>
+      </li>
+      <li class="mx-4 md:my-0 my-4">
+        <a href="" class="lg:text-2xl font-bold text-white hover:text-cyan-500 duration-500">Contact</a>
+      </li>
+
+    </ul>
+  </nav>
+
+  <!-----Introduction part start-->
+
+  <section class="bg-white">
+   <div class=" text-center  lg:my-48 md:my-20 my-48  ">
+
+      <h1 class="lg:text-5xl md:text-3xl text-xl font-serif italic font-black  ">I am a Computer Teacher
+      </h1>
+     
+      <h3 class="lg:text-5xl md:text-3xl text-xl font-serif italic font-black">&</h3>
+      <h4 class="lg:text-5xl md:text-3xl text-2xl font-serif italic font-black">Web Developer</h4>
+
+      
+      <h5 class="lg:text-2xl text-sm text-gray-600 lg:w-3/6 w-3/7 lg:ml-96 lg:mt-10 mt-8 ">Hi! My name is Abir Hossain. Welcome to my personal page that I’ve designed to showcase my skills and
+       expertise that I’ve accumulated over the year.</h5>
+       
+    </div>
+
+    
+  </section>
+
+  <!---introduction part end-->
+    <!---About part start-->
+
+    <section class="bg-blue-400 h-full w-full">
+      <div class="top">
+        <div class="text-center text-white text-3xl  font-semibold p-8"> ABOUT ME <hr class="w-40 ml-96 my-2  border-dotted  "></div>
+       
+
+        
+      </div>
+
+      <div class="buttom"></div>
+
+    </section>
+
+
+  <script>
+    function Menu(e) {
+      let list = document.querySelector('ul');
+      e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+    }
+  </script>
+
+
+</body>
+
+</html>
